@@ -29,8 +29,8 @@ module.exports = {
 
   langs: {
     en: {
-      final: "Made by ChatGpt🤖",
-      loading: "Wait for the answer... "
+      final: "𝗞𝗔𝗦𝗨𝗞𝗜 𝗔𝗜🎀",
+      loading: "𝗞𝗔𝗦𝗨𝗞𝗜 is searching please wait... "
     }
   },
 
@@ -66,7 +66,7 @@ module.exports = {
 
       const messageText = response.data.reply.trim(); // Adjust according to the response structure of the new API
       const userName = getLang("final");
-      const finalMsg = `${userName}\n━━━━━━━━━━━━━━━\n${messageText}\n━━━━━━━━━━━━━━━\n`;
+      const finalMsg = `${userName}\n\n🎀𝗔𝗻𝘀𝘄𝗲𝗿: ${messageText}`;
      api.editMessage(finalMsg, loadingReply.messageID); 
 
       console.log('Sent answer as a reply to user');
